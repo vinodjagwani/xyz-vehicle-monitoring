@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:5.7
+    ports:
+      - 3307:3306
+    environment:
+      - MYSQL_PASSWORD=root
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=xyz_db
+  rabbitmq:
+    image: rabbitmq:3.7-management
+    ports:
+      - 15672:15672
+      - 5672:5672
+  redis:
+    image: redis
+    ports:
+      - 6379:6379
+  vehicle-monitoring-producer:
+    image: vinodjagwani/vehicle-monitoring-producer
+    depends_on:
+      - rabbitmq
+    ports:
+      - 8081:8081
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USER_NAME=guest
+      - RABBIT_MQ_PASSWORD=guest
+  vehicle-monitoring-consumer:
+    image: vinodjagwani/vehicle-monitoring-consumer
+    depends_on:
+      - mysql
+      - rabbitmq
+      - redis
+    ports:
+      - 8082:8082
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USER_NAME=guest
+      - RABBIT_MQ_PASSWORD=guest
+      - REDIS_DB_HOST=redis
+      - REDIS_DB_PORT=6379

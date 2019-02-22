@@ -1,0 +1,4 @@
+com/xyz/vehicle/monitoring/service/mysql/VehicleServiceTest.class
+com/xyz/vehicle/monitoring/repository/redis/CurrentVehicleStatusRepositoryTest.class
+com/xyz/vehicle/monitoring/controller/VehicleMonitorControllerTest.class
+com/xyz/vehicle/monitoring/repository/mysql/VehicleRepositoryTest.class

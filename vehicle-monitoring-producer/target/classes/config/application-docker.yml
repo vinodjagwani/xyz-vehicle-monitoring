@@ -1,0 +1,10 @@
+spring:
+  rabbitmq:
+    host: ${RABBITMQ_HOST}
+    port: ${RABBITMQ_PORT}
+    username: ${RABBITMQ_USER_NAME}
+    password: ${RABBITMQ_PASSWORD}
+
+
+server:
+  port: 8081

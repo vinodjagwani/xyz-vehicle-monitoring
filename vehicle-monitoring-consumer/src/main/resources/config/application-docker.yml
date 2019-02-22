@@ -1,0 +1,24 @@
+spring:
+  rabbitmq:
+    host: ${RABBITMQ_HOST}
+    port: ${RABBITMQ_PORT}
+    username: ${RABBITMQ_USER_NAME}
+    password: ${RABBITMQ_PASSWORD}
+  datasource:
+    url: jdbc:mysql://${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}?autoReconnect=true&useSSL=false
+    username: ${DATABASE_USER}
+    password: ${DATABASE_PASSWORD}
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
+server:
+  port: 8082
+
+redis:
+  host: ${REDIS_DB_HOST}
+  port: ${REDIS_DB_PORT}

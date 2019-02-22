@@ -1,0 +1,24 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  datasource:
+    url: jdbc:mysql://localhost:3306/xyz_db?useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
+server:
+  port: 8082
+
+redis:
+  host: localhost
+  port: 6379

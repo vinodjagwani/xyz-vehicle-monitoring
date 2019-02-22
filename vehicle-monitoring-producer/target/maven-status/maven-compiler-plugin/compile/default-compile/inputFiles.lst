@@ -1,0 +1,13 @@
+/Users/vinodkumar/Downloads/xyz-vehicle-monitoring/vehicle-monitoring-producer/src/main/java/com/xyz/vehicle/monitoring/service/VehicleStatusProducerService.java
+/Users/vinodkumar/Downloads/xyz-vehicle-monitoring/vehicle-monitoring-producer/src/main/java/com/xyz/vehicle/monitoring/dto/ErrorResponseData.java
+/Users/vinodkumar/Downloads/xyz-vehicle-monitoring/vehicle-monitoring-producer/src/main/java/com/xyz/vehicle/monitoring/constant/Constants.java
+/Users/vinodkumar/Downloads/xyz-vehicle-monitoring/vehicle-monitoring-producer/src/main/java/com/xyz/vehicle/monitoring/dto/ErrorFieldData.java
+/Users/vinodkumar/Downloads/xyz-vehicle-monitoring/vehicle-monitoring-producer/src/main/java/com/xyz/vehicle/monitoring/dto/CurrentVehicleStatusData.java
+/Users/vinodkumar/Downloads/xyz-vehicle-monitoring/vehicle-monitoring-producer/src/main/java/com/xyz/vehicle/monitoring/facade/VehicleStatusProducerFacade.java
+/Users/vinodkumar/Downloads/xyz-vehicle-monitoring/vehicle-monitoring-producer/src/main/java/com/xyz/vehicle/monitoring/exception/ErrorCodeEnum.java
+/Users/vinodkumar/Downloads/xyz-vehicle-monitoring/vehicle-monitoring-producer/src/main/java/com/xyz/vehicle/monitoring/service/impl/VehicleStatusProducerServiceImpl.java
+/Users/vinodkumar/Downloads/xyz-vehicle-monitoring/vehicle-monitoring-producer/src/main/java/com/xyz/vehicle/monitoring/Application.java
+/Users/vinodkumar/Downloads/xyz-vehicle-monitoring/vehicle-monitoring-producer/src/main/java/com/xyz/vehicle/monitoring/facade/impl/VehicleStatusProducerFacadeImpl.java
+/Users/vinodkumar/Downloads/xyz-vehicle-monitoring/vehicle-monitoring-producer/src/main/java/com/xyz/vehicle/monitoring/controller/VehicleStatusProducerController.java
+/Users/vinodkumar/Downloads/xyz-vehicle-monitoring/vehicle-monitoring-producer/src/main/java/com/xyz/vehicle/monitoring/exception/DefaultExceptionHandler.java
+/Users/vinodkumar/Downloads/xyz-vehicle-monitoring/vehicle-monitoring-producer/src/main/java/com/xyz/vehicle/monitoring/config/RabbitMQConfig.java

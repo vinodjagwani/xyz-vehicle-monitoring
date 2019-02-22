@@ -1,0 +1,36 @@
+@startuml
+
+actor Device
+|||
+queue Vehicle_Status_Queue
+|||
+database RedisDB
+|||
+queue Websocket
+|||
+database MySQL
+|||
+participant WebGui
+
+
+
+Device -> Vehicle_Status_Queue: POST /v1.0/vehicles/status/send - {payload}
+|||
+Vehicle_Status_Queue --> RedisDB : Store Vehicle Status for 60 sec
+|||
+Vehicle_Status_Queue --> Websocket : Send data to websocket
+|||
+Websocket -> WebGui : Send message to screen for refresh the data
+|||
+WebGui --> MySQL : Refresh the new data from mysql
+|||
+WebGui --> RedisDB : Match the records from mysql
+|||
+|||
+RedisDB -> MySQL: Update matching records on code level
+|||
+|||
+MySQL -> WebGui: Display updated status on WebGui
+
+
+@enduml

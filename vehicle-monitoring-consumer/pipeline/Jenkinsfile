@@ -1,0 +1,44 @@
+pipeline {
+    agent any
+
+    tools {
+        maven 'Maven'
+    }
+    stages{
+	   stage('Checkout project') {
+	            steps {
+	                git 'Git url'
+	           }
+	   }
+	   stage ('Build') {
+	   		steps{
+	   		sh 'mvn clean package -DskipTests=true'
+	   		}
+	   }
+	   stage ('Test') {
+	            steps {
+	             sh 'mvn test'
+	            }
+	   }
+	   stage('Build Docker Image') {
+	        steps{
+				sh 'mvn clean package docker:build -DskipTests'
+            }
+	   }
+	   stage('Docker Push to docker registry') {
+	       steps {
+		   		withCredentials([usernamePassword(credentialsId: 'dockerHub', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
+		          sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
+		          sh 'docker push vinodjagwani/vehicle-monitoring-consumer:latest'
+		        }
+			}
+	   }
+	   stage('Push build to AWS'){
+		   steps{
+					sh "aws ecr get-login"
+ 	    			sh "docker tag vinodjagwani/vehicle-monitoring-consumer:latest 00.dkr.ecr.us-east-1.amazonaws.com/devops:latest"
+    				sh "docker push 00.dkr.ecr.us-east-1.amazonaws.com/devops:latest"
+		   }
+	   }
+	}
+}

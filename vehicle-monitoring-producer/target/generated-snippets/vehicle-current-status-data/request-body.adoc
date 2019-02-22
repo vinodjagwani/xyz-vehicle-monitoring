@@ -1,0 +1,8 @@
+[source,options="nowrap"]
+----
+{
+  "vehicleId" : 12,
+  "customerId" : 5,
+  "status" : true
+}
+----

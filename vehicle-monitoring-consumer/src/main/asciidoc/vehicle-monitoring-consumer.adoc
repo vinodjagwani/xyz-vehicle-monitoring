@@ -1,0 +1,28 @@
+= Vehicle Monitoring Producer
+v 1.0.0
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:highlightjs-theme: github
+:toc: left
+:toclevels: 4
+:sectlinks:
+:sectnums:
+
+[introduction]
+== Introduction
+Created by Vinod Jagwani as Challenge for xyz
+
+== CurrentVehicleStatusList
+
+=== Receive Current Vehicle Status
+*Get data for current vehicle status*
+====
+Request
+include::{snippets}/query-vehicle-status-list/http-request.adoc[]
+====
+====
+Response
+include::{snippets}/query-vehicle-status-list/http-response.adoc[]
+====
+

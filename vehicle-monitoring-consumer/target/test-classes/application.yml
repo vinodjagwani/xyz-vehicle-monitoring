@@ -1,0 +1,4 @@
+app:
+  redis:
+    embedded: true
+

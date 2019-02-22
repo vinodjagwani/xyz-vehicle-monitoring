@@ -1,0 +1,9 @@
+[source,bash]
+----
+$ echo '{
+  "vehicleId" : 12,
+  "customerId" : 5,
+  "status" : true
+}' | http POST 'http://localhost:8080/v1.0/vehicles/status/send' \
+    'Content-Type:application/json;charset=UTF-8'
+----

@@ -1,0 +1,10 @@
+2019-02-23 01:53:29,576 INFO org.springframework.boot.StartupInfoLogger [main] Starting VehicleStatusProducerControllerTest on AGC01210 with PID 41642 (started by vinodkumar in /Users/vinodkumar/Downloads/xyz-vehicle-monitoring/vehicle-monitoring-producer)
+2019-02-23 01:53:29,594 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2019-02-23 01:53:29,602 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-02-23 01:53:38,474 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-23 01:53:40,513 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2019-02-23 01:53:40,515 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2019-02-23 01:53:40,559 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 43 ms
+2019-02-23 01:53:40,881 INFO org.springframework.boot.StartupInfoLogger [main] Started VehicleStatusProducerControllerTest in 14.219 seconds (JVM running for 22.341)
+2019-02-23 01:53:41,950 INFO com.xyz.vehicle.monitoring.controller.VehicleStatusProducerController [main] Vehicle status for customer CurrentVehicleStatusData(vehicleId=12, customerId=5, status=true)
+2019-02-23 01:53:44,818 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-2] Shutting down ExecutorService 'applicationTaskExecutor'
