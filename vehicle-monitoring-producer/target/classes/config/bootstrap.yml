@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: vehicle-monitoring-producer
-  jmx:
-    default-domain: vehicle-monitoring-producer

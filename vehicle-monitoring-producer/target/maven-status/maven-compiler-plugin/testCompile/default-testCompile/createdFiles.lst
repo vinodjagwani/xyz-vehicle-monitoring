@@ -1,5 +1,0 @@
-com/xyz/vehicle/monitoring/util/MockUtils.class
-com/xyz/vehicle/monitoring/facade/VehicleStatusProducerFacadeTest.class
-com/xyz/vehicle/monitoring/AbstractVehicleStatusTest.class
-com/xyz/vehicle/monitoring/service/VehicleStatusProducerServiceTest.class
-com/xyz/vehicle/monitoring/controller/VehicleStatusProducerControllerTest.class

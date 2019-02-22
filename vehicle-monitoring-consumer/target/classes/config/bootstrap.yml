@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: vehicle-status-consumer
-  jmx:
-    default-domain: vehicle-status-consumer
