@@ -37,5 +37,3 @@ Now you can check the urls
 http://127.0.0.1:8082/index.html  (Web-Gui) you can able to see the vehicle status
 
 http://localhost:15672/  (RabbitMQ with guest:guest username and password)
-
-
