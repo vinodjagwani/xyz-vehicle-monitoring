@@ -17,3 +17,4 @@ Above diagram represents the overall picture and flow of solution. The solution 
 7.  Once message received by frontend using socketconnection it will refresh the status of vehicles on the page (just for performance purpose pagination is used).
 8. Since currently frontend application connected with consumer so after refreshing of page, frontend ask the vehicle and customer data which is store in mysql and also contact with redis db, so to update those status which are already in redis db and return back to frontend.
 
+
